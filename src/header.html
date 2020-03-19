@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            margin:0;
+        }
+
+        .site-header{
+            height: 105vh;
+            background: url('../public/images/photo-of-starry-night-1421903.jpg');
+            background-size: cover;  
+        }
+        .shadow-overlay{
+            height:100%;
+            width:100%;
+            /* background-color:rgba(0,0,0,.6); */
+            
+            position: relative;
+            top: 0; left: 0; 
+            width: 100%;
+            height: 100%;   
+            box-shadow: 0px 0px 0px 4000px rgba(27, 61, 88, 0.5) inset;
+        }
+        .site-header-grid{
+            height: 75vh;
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: space-evenly;
+            column-gap: 50px;
+            align-items:center;
+            z-index: 1;
+        }
+        .site-header-item1{
+            grid-column-start:1;
+            grid-column-end: 2;
+            font-size: 60px;
+            z-index: 2;
+            color:white;
+        }
+        .site-header-item2{
+            
+            font-size: 40px;
+            z-index: 2;
+            color:white;
+        }
+        .site-header-scroll{
+            display:flex;
+            justify-content: center;
+            color:white;
+            font-size: 24px;
+        }
+
+        .arrow {
+        text-align: center;
+        margin: 3% 0;
+        }
+        .arrow a {
+            color: white;
+        }
+        .bounce {
+        -moz-animation: bounce 2s infinite;
+        -webkit-animation: bounce 2s infinite;
+        animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+        }
+        40% {
+            transform: translateY(-30px);
+        }
+        60% {
+            transform: translateY(-15px);
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="site-header">
+        <div class="shadow-overlay">
+            <div class="site-header-grid">
+                <div class="site-header-item1">
+                    Hello, 
+                    <br/>
+                    I'm Nick Mahe.
+                    <br/>
+                    Full-stack developer
+                </div>
+                <div class="site-header-item2">
+                    Contact Info
+                </div>
+            </div>
+            <div class="site-header-scroll">
+                Press to Scroll Down
+            </div>
+            <div class="arrow bounce site-header-scroll ">
+                <a href="#" class="fa fa-arrow-down fa-2x"></a>
+            </div>
+        </div> 
+    </div>
+</body>
+</html>
