@@ -65,7 +65,7 @@ body{
 .site-header-grid{
   height: 75vh;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: repeat(auto-fit, minmax(340px, auto));
   justify-content: space-evenly;
   column-gap: 50px;
   align-items:center;
@@ -94,6 +94,36 @@ body{
   font-size:20px;
   color: whitesmoke;
 }
+.resume-link{
+  display: flex;
+  justify-content: center;
+  margin-top:8px;
+}
+.resume-link a{
+  color:whitesmoke;
+  text-decoration: none;
+  padding: 10px;
+  background-color: #55968f;
+}
+.resume-link a:hover{
+  filter:brightness(1.2);
+  transition-duration: .5s;
+}
+.icon-container{
+  display: flex;
+  justify-content: center;
+}
+.icon-container a{
+  text-decoration: none;
+  color:#4f98ca;
+  margin: 20px 16px 0 16px;
+  font-size:46px;
+}
+.icon-container a:hover{
+  color:#50d890;
+  transition-duration: .5s;
+}
+
 .site-header-scroll{
   display:flex;
   justify-content: center;

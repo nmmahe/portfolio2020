@@ -135,13 +135,13 @@ componentDidMount() {
                     <div>
                       Email: nicholasmahe@gmail.com
                     </div>
-                    <div>
+                    <div className="resume-link">
                       <a href="#">See my resume</a>
                     </div>
                     <div className="icon-container">
-                      <a className="fab fa-linkedin-in"></a>
                       <a href="#" className="fab fa-linkedin-in"></a>
-                      <a href="#" className="fab fa-linkedin-in"></a>
+                      <a href="#" className="fab fa-github"></a>
+                      <a href="#" className="fab fa-facebook"></a>
                     </div>
                   </div>
               </div>
