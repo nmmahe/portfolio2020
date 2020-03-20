@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
+import Pdf from './documents/Nick Mahe Resume February 2020.pdf';
 
 class App extends Component{
 
@@ -11,18 +12,13 @@ state={
       categories:[
         "All",
         "Javascript",
-        "React",
         "Python",
-        "JMP",
         "MIVA",
         "PHP",
         "C#",
         "Swift",
         "SwiftUI",
-        "Bootstrap",
-        "Azure Web Service",
         "Machine Learning",
-        "Wordpress",
         "MVC"
       ]
     }
@@ -55,14 +51,24 @@ componentDidMount() {
                     <img alt={project.name} width={project.primaryLanguage === "Swift" ? null: 360} height={project.primaryLanguage === "Swift" ? 400 : 260} src={project.images[0].resolutions.desktop.url}></img>
                   </div>
                   <div className="flip-card-back">
-                    <h1>{project.name}</h1>
+                    <h1 className="project-name">{project.name}</h1>
                     
                       <div className="projectDescription">
                         <div>
                           {project.summary}
                         </div>
+                        
                       </div>
                     </div>
+                  </div>
+                  <div className="icon-container project-icon">
+                    {project.website ? 
+                    (
+                      <a href={project.website} className="fas fa-eye" target="_blank"></a>
+                    ) : 
+                    (
+                      <a href={project.githubUrl} className="fab fa-github" target="_blank"></a>
+                    )} 
                   </div>
                 </div>
             </div>
@@ -90,14 +96,25 @@ componentDidMount() {
                     <img alt={project.name} width={project.primaryLanguage === "Swift" ? null: 360} height={project.primaryLanguage === "Swift" ? 400 : 260} src={project.images[0].resolutions.desktop.url}></img>
                   </div>
                   <div className="flip-card-back">
-                    <h1>{project.name}</h1>
+                    <h1 className="project-name">{project.name}</h1>
                     
                       <div className="projectDescription">
                         <div>
                           {project.summary}
                         </div>
+                        <div>
+                        </div>
                       </div>
                     </div>
+                  </div>
+                  <div className="icon-container project-icon">
+                    {project.website ? 
+                    (
+                      <a href={project.website} className="fas fa-eye"></a>
+                    ) : 
+                    (
+                      <a href={project.githubUrl} className="fab fa-github"></a>
+                    )} 
                   </div>
                 </div>
             </div>
@@ -111,7 +128,7 @@ componentDidMount() {
 
     const categories = this.state.categories.map(category => {
       return(
-        <button key={category} value={category} onClick={(category) => sortCategory(category.target.value)}>{category}</button>
+        <button className="filter-button" key={category} value={category} onClick={(category) => sortCategory(category.target.value)}>{category}</button>
       );
     })
 
@@ -132,16 +149,16 @@ componentDidMount() {
                     Contact Me
                   </div>
                   <div className="contact-container">
-                    <div>
+                    <a href="mailto:nicholasmahe@gmail.com">
                       Email: nicholasmahe@gmail.com
-                    </div>
+                    </a>
                     <div className="resume-link">
-                      <a href="#">See my resume</a>
+                      <a href={Pdf} target="_blank">See my resume</a>
                     </div>
                     <div className="icon-container">
-                      <a href="#" className="fab fa-linkedin-in"></a>
-                      <a href="#" className="fab fa-github"></a>
-                      <a href="#" className="fab fa-facebook"></a>
+                      <a href="https://www.linkedin.com/in/nicholas-mahe" className="fab fa-linkedin-in"></a>
+                      <a href="https://github.com/nmmahe" className="fab fa-github"></a>
+                      <a href="https://www.facebook.com/nick.m.mahe" className="fab fa-facebook"></a>
                     </div>
                   </div>
               </div>
@@ -160,12 +177,13 @@ componentDidMount() {
         <div className="title">
           Welcome,
         </div>
-        <div className="subtitle">
-          My name is Nick Mahe, and I am a web developer. I love building applications and searching for ways to automate and be innovative.
+        <em><div className="subtitle">
+          I love building applications and searching for ways to automate processes and be innovative. I have industry experience in several 
+          front and back-end technologies, creating professional, user-friendly websites and applications, as well as experience working face-to-face with clients and on a team. 
         </div>
-        Grab resume
+        </em>
       <div>
-        <h1>Projects</h1>
+        <h1 className="projects-main-title">Projects</h1>
         {categories}
       </div>
         <div className="projects-grid">
