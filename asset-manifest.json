@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/portfolio2020/static/css/main.965aeba0.chunk.css",
+    "main.js": "/portfolio2020/static/js/main.e2d13b2e.chunk.js",
+    "main.js.map": "/portfolio2020/static/js/main.e2d13b2e.chunk.js.map",
+    "runtime-main.js": "/portfolio2020/static/js/runtime-main.2f87c5ab.js",
+    "runtime-main.js.map": "/portfolio2020/static/js/runtime-main.2f87c5ab.js.map",
+    "static/js/2.960e620d.chunk.js": "/portfolio2020/static/js/2.960e620d.chunk.js",
+    "static/js/2.960e620d.chunk.js.map": "/portfolio2020/static/js/2.960e620d.chunk.js.map",
+    "index.html": "/portfolio2020/index.html",
+    "precache-manifest.03d38c73cbd8e24a6cb59c76ff6eac45.js": "/portfolio2020/precache-manifest.03d38c73cbd8e24a6cb59c76ff6eac45.js",
+    "service-worker.js": "/portfolio2020/service-worker.js",
+    "static/css/main.965aeba0.chunk.css.map": "/portfolio2020/static/css/main.965aeba0.chunk.css.map",
+    "static/js/2.960e620d.chunk.js.LICENSE": "/portfolio2020/static/js/2.960e620d.chunk.js.LICENSE",
+    "static/media/Nick Mahe Resume February 2020.pdf": "/portfolio2020/static/media/Nick Mahe Resume February 2020.8ebfc29a.pdf",
+    "static/media/App.css": "/portfolio2020/static/media/photo-of-starry-night-1421903.83736091.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2f87c5ab.js",
+    "static/js/2.960e620d.chunk.js",
+    "static/css/main.965aeba0.chunk.css",
+    "static/js/main.e2d13b2e.chunk.js"
+  ]
+}
